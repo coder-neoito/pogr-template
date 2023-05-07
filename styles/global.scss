@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ubuntu", sans-serif;
+}
+p {
+  line-height: 1.5em;
+}
+
+.btn {
+  border: none;
+  background-color: white;
+  padding: 0.75rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: scale 0.2s ease-in-out;
+  &:hover {
+    scale: 1.05;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  padding-inline: 2rem;
+  margin-inline: auto;
+}
