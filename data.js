@@ -15,3 +15,21 @@ export const gamesInterests = [
     image: "https://pogr.gg/static/features/sediment.png",
   },
 ];
+
+export const developersInterests = [
+  {
+    desc: "POGR provides a fully customizable widget system to visualize incoming game data. We are the next generation data collection and visualization. Track community engagement, balance your gameplay, identify bugs and crashes. You can do it all.",
+    title: "Widget System",
+    image: "https://pogr.gg/static/features/widget.png",
+  },
+  {
+    desc: "Data analysis has never been so easy! We know developers already have limited bandwidth so we’ve made a SDK that you can simply drag and drop into your game engine and start collecting data in as little as 10 minutes.",
+    title: "POGR SDK",
+    image: "https://pogr.gg/static/features/sdk.png",
+  },
+  {
+    desc: "For the first time, gaming profiles are directly linked to a player and their real world identity. Track and prevent hackers, griefers, and bots who'll otherwise ruin your community's gaming experience.",
+    title: "Statistical Fingerprint",
+    image: "https://pogr.gg/static/features/statistical.png",
+  },
+];
