@@ -1,4 +1,4 @@
-.home {
+.sdk {
   position: relative;
   overflow: hidden;
 
@@ -30,6 +30,7 @@
     justify-content: center;
     gap: 1rem;
     width: min(100%, 500px);
+    margin-left: 6rem;
 
     .hero__label {
       background-color: black;
@@ -45,63 +46,79 @@
       text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
       text-transform: uppercase;
       line-height: 1em;
+      position: relative;
+
+      .curly {
+        position: absolute;
+        top: 0;
+        left: -4rem;
+        height: 8rem;
+
+        &:nth-of-type(2) {
+          opacity: 0.5;
+          scale: 0.7;
+          left: -6rem;
+        }
+      }
     }
 
     .hero__description {
       font-size: 1rem;
       color: white;
     }
+    button.hero__cta {
+      background-color: transparent;
+      color: white;
+      margin-left: 1rem;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
   }
 
-  .quote {
+  .cta {
     text-align: center;
-    margin-block: 10rem;
-    position: relative;
-    max-width: max-content;
-    margin-inline: auto;
-
-    h3 {
-      color: white;
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
+    color: white;
+    padding-block: 5rem;
     h2 {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #0dd;
     }
-
-    &::after {
-      position: absolute;
-      content: url("https://pogr.gg/static/right-quote.svg");
-      right: -4rem;
-      bottom: 0;
-      transform: translate(100%, 50%);
-      scale: 0.9;
-    }
-
-    &::before {
-      position: absolute;
-      content: url("https://pogr.gg/static/left-quote.svg");
-      left: -4rem;
-      top: 0;
-      transform: translate(-100%, -50%);
-      scale: 0.9;
+    p {
+      margin-bottom: 2rem;
     }
   }
 
-  .interest {
-    h3 {
-      text-align: center;
-      color: white;
-      font-size: 1.5rem;
-    }
-    div {
+  .blogs {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+
+    .blog {
       display: flex;
-      justify-content: center;
       gap: 2rem;
-      flex-wrap: wrap;
-      padding-top: 2rem;
-      padding-bottom: 5rem;
+      align-items: center;
+
+      > * {
+        flex: 1;
+      }
+      img {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      button {
+        margin-top: 1rem;
+        background-color: rgb(206, 206, 206);
+      }
     }
   }
 }
