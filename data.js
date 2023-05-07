@@ -33,3 +33,22 @@ export const developersInterests = [
     image: "https://pogr.gg/static/features/statistical.png",
   },
 ];
+
+export const podcasts = [
+  {
+    id: 1,
+    image: "https://i.scdn.co/image/ab6765630000ba8ad3f8fa26fb162d6c3296941d",
+    title: "LVLup Episode 1 - Danny Cortenraede",
+    desc: " For the first episode of the LVLUP Pod, we hosted all-star POGR investor and Venturerock Managing Partner Danny Cortenraede. With decades of experience behind him, Danny has mastered the art of engagement. He knows when to walk away and when to double down, and that’s why he’s so confident POGR’s analytics will power the next generation of games and the Metaverse. Throughout LVLUp’s debut episode.",
+    createdAt: "March 2, 2023",
+    length: "46 min, 26 sec",
+  },
+  {
+    id: 1,
+    image: "https://i.scdn.co/image/ab6765630000ba8ad3f8fa26fb162d6c3296941d",
+    title: "LVLup Episode 2 - Danny Cortenraede",
+    desc: " For the first episode of the LVLUP Pod, we hosted all-star POGR investor and Venturerock Managing Partner Danny Cortenraede. With decades of experience behind him, Danny has mastered the art of engagement. He knows when to walk away and when to double down, and that’s why he’s so confident POGR’s analytics will power the next generation of games and the Metaverse. Throughout LVLUp’s debut episode.",
+    createdAt: "January 2, 2023",
+    length: "20 min, 26 sec",
+  },
+];

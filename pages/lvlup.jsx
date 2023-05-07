@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/lvlup.module.scss";
+import PodcastTable from "@/components/PodcastTable";
 
 const LvlUp = () => {
   return (
@@ -58,49 +59,7 @@ const LvlUp = () => {
           </p>
         </div>
       </article>
-      <article className={styles.episodes}>
-        <div className="container">
-          <h2>All episodes</h2>
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>EPISODE</th>
-                <th>PUBLISHED</th>
-                <th>LENGTH</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img
-                    src="https://i.scdn.co/image/ab6765630000ba8ad3f8fa26fb162d6c3296941d"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <h3>LVLup Episode 1 - Danny Cortenraede</h3>
-                  <p>
-                    For the first episode of the LVLUP Pod, we hosted all-star
-                    POGR investor and Venturerock Managing Partner Danny
-                    Cortenraede. With decades of experience behind him, Danny
-                    has mastered the art of engagement. He knows when to walk
-                    away and when to double down, and that’s why he’s so
-                    confident POGR’s analytics will power the next generation of
-                    games and the Metaverse. Throughout LVLUp’s debut episode,{" "}
-                  </p>
-                </td>
-                <td>March 2, 2023</td>
-                <td>46 min, 26 sec</td>
-                <td>
-                  <img src="https://pogr.gg/static/icons/play.svg" alt="play" />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </article>
+      <PodcastTable />
     </section>
   );
 };

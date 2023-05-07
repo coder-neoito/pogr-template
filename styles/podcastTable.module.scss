@@ -1,0 +1,69 @@
+.episodes {
+  background-color: rgb(12, 48, 65);
+  padding-block: 5rem;
+
+  h2 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+    border-spacing: 0;
+    color: white;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    thead {
+      background-color: rgba(0, 0, 0, 0.6);
+      th {
+        padding: 1rem;
+        text-align: left;
+        font-size: 0.8rem;
+      }
+    }
+
+    tbody tr {
+      background-color: rgba(0, 0, 0, 0.2);
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    td {
+      padding: 1rem;
+      cursor: pointer;
+
+      p {
+        color: rgba(255, 255, 255, 0.61);
+        margin-top: 0.5rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Set the maximum number of lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      &:nth-of-type(n + 3) {
+        white-space: nowrap;
+      }
+
+      &:first-of-type {
+        width: 150px;
+        img {
+          width: 100%;
+          border-radius: 0.5rem;
+        }
+      }
+
+      &:last-of-type {
+        img {
+          width: 40px;
+          margin-inline: 2rem;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+}
