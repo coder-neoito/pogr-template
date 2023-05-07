@@ -2,8 +2,33 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styles from "../styles/layout.module.scss";
+import { useRouter } from "next/router";
+
+const links = [
+  {
+    title: "Developers",
+    url: "/developers",
+  },
+  {
+    title: "Gamers",
+    url: "/",
+  },
+  {
+    title: "Pricing",
+    url: "/pricing",
+  },
+  {
+    title: "SDK",
+    url: "/sdk",
+  },
+  {
+    title: "LVLup",
+    url: "/lvlup",
+  },
+];
 
 const Layout = ({ children }) => {
+  const { asPath } = useRouter();
   return (
     <div className={styles.layout}>
       <header>
@@ -18,21 +43,11 @@ const Layout = ({ children }) => {
           </Link>
           <nav>
             <ul>
-              <li className="active">
-                <Link href="/developers">Developers</Link>
-              </li>
-              <li>
-                <Link href="/">Gamers</Link>
-              </li>
-              <li>
-                <Link href="pricing">Pricing</Link>
-              </li>
-              <li>
-                <Link href="sdk">SDK</Link>
-              </li>
-              <li>
-                <Link href="lvlup">LVLup</Link>
-              </li>
+              {links.map((l) => (
+                <li className={l.url === asPath ? styles.active : ""}>
+                  <Link href={l.url}>{l.title}</Link>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>

@@ -33,7 +33,19 @@
 
       &.active {
         opacity: 1;
-        display: none;
+        font-weight: bold;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 110%;
+          height: 2px;
+          background-color: #0dd;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -0.75rem;
+        }
       }
     }
   }
