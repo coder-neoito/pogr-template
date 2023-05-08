@@ -1,0 +1,52 @@
+.layout {
+  header {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+
+    li {
+      opacity: 0.8;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      &.active {
+        opacity: 1;
+        font-weight: bold;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 110%;
+          height: 2px;
+          background-color: #0dd;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -0.75rem;
+        }
+      }
+    }
+  }
+}
